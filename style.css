@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 70px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+    display: inline-block;
+}
+
+a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    transition: all 0.5s;
+    background-color: #6a63f6;
+}
+a:hover::after{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+    border-top: 3px #f6f6f6 solid;
+}
+
+object{
+    max-width: 550px;
+    border-radius: 100px;
+    height: auto;
+    border-bottom: 10px solid #133b4f;
+    border-top: 10px solid #133b4f;
+}
+
+.content-left{
+    width: 30%;
+}
+
+main h1{
+    font-size: 54px;
+    color: #133b4f;
+}
+
+main h2{
+    font-size: 25px;
+    color: #6a63f6;
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+
+main p{
+    font-size: 14px;
+    color: #3a3a3a;
+    line-height: 31.5px;
+    margin: 30px 0;
+    font-weight: 400;
+}
+
+main .cta{
+    padding: 10px 30px;
+    transition: all 0.2s ease;
+    border: #6a63f6 3px solid;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: white;
+    color: #6a63f6;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.signup-btn{
+    padding: 5px 30px;
+        transition: all 0.5s ease;
+        border: #6a63f6 3px solid;
+        border-radius: 25px;
+        cursor: pointer;
+        background-color: #6a63f6;
+        color: white;
+        font-weight: 700;
+}
+
+main .cta:hover{
+    background-color: #6a63f6;
+    color: white;
+}
+
+img{
+    filter: contrast(5);
+}
